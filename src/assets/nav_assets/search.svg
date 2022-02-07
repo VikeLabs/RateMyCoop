@@ -8,10 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="add_review.svg"
-   inkscape:export-filename="C:\Users\Caelum\Documents\GitHub\RateMyCoop\src\assets\nav_assets\add_review.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   sodipodi:docname="search.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -28,9 +25,9 @@
      showgrid="false"
      units="px"
      width="312px"
-     inkscape:zoom="1"
-     inkscape:cx="167.5"
-     inkscape:cy="244.5"
+     inkscape:zoom="0.125"
+     inkscape:cx="-2220"
+     inkscape:cy="-956"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -129,26 +126,29 @@
      id="layer2"
      inkscape:label="Layer 2">
     <g
-       id="g1158"
-       style="display:inline">
-      <rect
-         style="fill:#000000;fill-opacity:1;stroke-width:0.227001"
-         id="rect1076-1"
-         width="8.8817368"
-         height="86.060959"
-         x="61.320625"
-         y="-110.76381"
-         ry="2.0032108"
-         transform="rotate(90)" />
-      <rect
-         style="fill:#000000;fill-opacity:1;stroke-width:0.227001"
-         id="rect1076"
-         width="8.8817368"
-         height="86.060959"
-         x="63.292465"
-         y="22.731014"
-         ry="2.0032108"
-         inkscape:label="rect1076" />
+       id="g2452"
+       transform="translate(-6.3610148,-7.1093695)">
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke-width:0.307589;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1930"
+         cx="62.85033"
+         cy="62.85033"
+         r="28.882" />
+      <circle
+         style="fill:#f9dc5c;fill-opacity:1;stroke-width:0.212998;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path1930-1"
+         cx="62.850536"
+         cy="62.850536"
+         r="20" />
     </g>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:0.292081;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2476"
+       width="8.882"
+       height="32.046844"
+       x="-4.0387778"
+       y="111.25324"
+       ry="4.5456409"
+       transform="rotate(-45)" />
   </g>
 </svg>

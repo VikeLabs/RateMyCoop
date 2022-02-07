@@ -8,10 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="add_review.svg"
-   inkscape:export-filename="C:\Users\Caelum\Documents\GitHub\RateMyCoop\src\assets\nav_assets\add_review.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   sodipodi:docname="profile.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -29,8 +26,8 @@
      units="px"
      width="312px"
      inkscape:zoom="1"
-     inkscape:cx="167.5"
-     inkscape:cy="244.5"
+     inkscape:cx="-0.5"
+     inkscape:cy="81.5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -128,27 +125,19 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2">
-    <g
-       id="g1158"
-       style="display:inline">
-      <rect
-         style="fill:#000000;fill-opacity:1;stroke-width:0.227001"
-         id="rect1076-1"
-         width="8.8817368"
-         height="86.060959"
-         x="61.320625"
-         y="-110.76381"
-         ry="2.0032108"
-         transform="rotate(90)" />
-      <rect
-         style="fill:#000000;fill-opacity:1;stroke-width:0.227001"
-         id="rect1076"
-         width="8.8817368"
-         height="86.060959"
-         x="63.292465"
-         y="22.731014"
-         ry="2.0032108"
-         inkscape:label="rect1076" />
-    </g>
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.264999;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1440"
+       cx="67.73333"
+       cy="41.671871"
+       r="16.007292" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:0.256999;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect1544"
+       width="65.973373"
+       height="39.6875"
+       x="34.746647"
+       y="62.441662"
+       ry="19.246944" />
   </g>
 </svg>
