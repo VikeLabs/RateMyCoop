@@ -28,3 +28,17 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Install bootstrap locally
+
+If package.json does not include bootstrap
+```
+npm install --save bootstrap
+```
+
+Otherwise
+```
+npm install
+```
+
+
