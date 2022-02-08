@@ -18,9 +18,17 @@
       <div class="collapse navbar-collapse" id="nav-links">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item ms-auto" id="search-item">
-            <span class="tt">
-              <router-link class="nav-link" :to="{ name: '', params: {} }"
-                ><img
+            <span>
+              <router-link
+                class="nav-link darken"
+                :to="{ name: '', params: {} }"
+                title="<h5>Search</h5>"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-html="true"
+                id="Search"
+                ><p class="display-on-small nav-text" id="tooltip">Search</p>
+                <img
                   class="nav-btn"
                   src="@/assets/nav_assets/search.svg"
                   alt="Search"
@@ -29,23 +37,41 @@
             </span>
           </li>
           <li class="nav-item ms-auto" id="add-review-item">
-            <span class="tt">
-              <router-link class="nav-link" :to="{ name: '', params: {} }"
-                ><img
+            <span>
+              <router-link
+                class="nav-link darken"
+                :to="{ name: '', params: {} }"
+                title="<h5>Add Review</h5>"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-html="true"
+                id="Add Review"
+                ><p class="display-on-small nav-text">Add Review</p>
+                <img
                   class="nav-btn"
                   src="@/assets/nav_assets/add_review.svg"
                   alt="Add Review"
-              /></router-link>
+                />
+              </router-link>
             </span>
           </li>
           <li class="nav-item ms-auto" id="profile-item">
-            <span class="tt" data-bs-placement="bottom" title="Profile">
-              <router-link class="nav-link" :to="{ name: '', params: {} }"
-                ><img
+            <span>
+              <router-link
+                class="nav-link darken"
+                :to="{ name: '', params: {} }"
+                title="<h5>Profile</h5>"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-html="true"
+                id="Profile"
+                ><p class="display-on-small nav-text">Profile</p>
+                <img
                   class="nav-btn"
                   src="@/assets/nav_assets/profile.svg"
                   alt="Profile"
-              /></router-link>
+                />
+              </router-link>
             </span>
           </li>
         </ul>
@@ -53,6 +79,19 @@
     </div>
   </nav>
 </template>
+
+<script>
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import { Tooltip } from "bootstrap";
+export default {
+  mounted() {
+    Array.from(
+      document.querySelectorAll('a[data-bs-toggle="tooltip"]')
+    ).forEach((tooltipNode) => new Tooltip(tooltipNode));
+  },
+};
+</script>
 
 <!-- router-link is an <a> tag in disguise-->
 <style scoped>
@@ -62,24 +101,35 @@ a.navbar-brand {
   font-weight: 500;
   font-size: 2em;
 }
-img.nav-btn {
-  width: 4em;
-}
 ul.navbar-nav {
   align: right;
+}
+p.nav-text {
+  margin-right: 0.5em;
+  font-size: 1.5em;
 }
 li.nav-item {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
+img.nav-btn {
+  width: 4em;
+  display: inline-block;
+}
+.darken:hover {
+  opacity: 60%;
+}
+.darken:active {
+  opacity: 55%;
+}
+@media (min-width: 768px) {
+  .display-on-small {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .display-on-small {
+    display: inline-block;
+  }
+}
 </style>
-
-<script>
-/*
-import "bootstrap";
-const tooltips = document.querySelectorAll(".tt");
-tooltips.forEach((t) => {
-  new bootstrap.Tooltip(t);
-});
-*/
-</script>
