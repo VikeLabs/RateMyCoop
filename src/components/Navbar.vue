@@ -22,11 +22,7 @@
               <router-link
                 class="nav-link darken"
                 :to="{ name: '', params: {} }"
-                title="<h5>Search</h5>"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-html="true"
-                id="Search"
+                title="Search"
                 ><p class="display-on-small nav-text" id="tooltip">Search</p>
                 <img
                   class="nav-btn"
@@ -41,11 +37,7 @@
               <router-link
                 class="nav-link darken"
                 :to="{ name: '', params: {} }"
-                title="<h5>Add Review</h5>"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-html="true"
-                id="Add Review"
+                title="Add Review"
                 ><p class="display-on-small nav-text">Add Review</p>
                 <img
                   class="nav-btn"
@@ -60,11 +52,7 @@
               <router-link
                 class="nav-link darken"
                 :to="{ name: '', params: {} }"
-                title="<h5>Profile</h5>"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-html="true"
-                id="Profile"
+                title="Profile"
                 ><p class="display-on-small nav-text">Profile</p>
                 <img
                   class="nav-btn"
@@ -79,19 +67,6 @@
     </div>
   </nav>
 </template>
-
-<script>
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import { Tooltip } from "bootstrap";
-export default {
-  mounted() {
-    Array.from(
-      document.querySelectorAll('a[data-bs-toggle="tooltip"]')
-    ).forEach((tooltipNode) => new Tooltip(tooltipNode));
-  },
-};
-</script>
 
 <!-- router-link is an <a> tag in disguise-->
 <style scoped>
