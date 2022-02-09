@@ -97,12 +97,12 @@ img.nav-btn {
 .darken:active {
   opacity: 55%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .display-on-small {
     display: none;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .display-on-small {
     display: inline-block;
   }
