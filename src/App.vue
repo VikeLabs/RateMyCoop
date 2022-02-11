@@ -1,10 +1,18 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <router-view />
+  <Footer />
 </template>
+
+<script>
+import Footer from "@/components/Footer.vue";
+
+export default {
+  name: "app",
+  components: {
+    Footer,
+  },
+};
+</script>
 
 <style>
 #app {
