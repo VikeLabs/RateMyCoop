@@ -1,6 +1,6 @@
 <template>
-  AHELOWE
   <footer class="bg-dark fixed-bottom main-footer">
+    <!-- Does not wrap -->
     <p>
       <router-link class="footer-link" :to="{ name: '', params: {} }"
         >About Us</router-link
