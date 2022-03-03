@@ -1,21 +1,23 @@
 <template>
-  <Nav/>
-  <router-view/>
+  <Navbar />
+  <router-view />
+  <Footer />
 </template>
 
 <script>
-import Nav from '@/components/Nav.vue'
+import Footer from "@/components/Footer.vue";
+import Navbar from "@/components/Navbar.vue";
 
 export default {
   name: "app",
   components: {
-    Nav
-  }
-}
+    Footer,
+    Navbar,
+  },
+};
 </script>
 
 <style>
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -37,5 +39,9 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+router-link {
+  color: white;
 }
 </style>
