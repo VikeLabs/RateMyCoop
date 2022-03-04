@@ -45,5 +45,3 @@ Otherwise
 ```
 npm install
 ```
-
-

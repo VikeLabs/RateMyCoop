@@ -1,11 +1,21 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/CreateReview">Create Review</router-link>
-  </div>
-  <router-view/>
+  <Navbar />
+  <router-view />
+  <Footer />
 </template>
+
+<script>
+import Footer from "@/components/Footer.vue";
+import Navbar from "@/components/Navbar.vue";
+
+export default {
+  name: "app",
+  components: {
+    Footer,
+    Navbar,
+  },
+};
+</script>
 
 <style>
 #app {
@@ -13,7 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  /*color: #2c3e50;*/
+  color: #f9dc5c;
+  background-color: #2f2f2f;
 }
 
 #nav {
@@ -27,5 +39,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+router-link {
+  color: white;
 }
 </style>
