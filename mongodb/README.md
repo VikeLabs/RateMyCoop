@@ -1,7 +1,7 @@
 # MongoDB # 
 This folder will hold all the relevant files for our mongo db instace. Mongo is a popular NoSQL database, and for this project we will be running mongo using docker. This is our first instance running mongodb for this project and the purpose of this directory as of right now is to get everyone familiar with both mongodb and docker.
 
-Here we will walk through what docker is, why we are using it (at least for now) and how to use it. 
+Here we will walk through what docker is, why we are using it (at least for now) and how to use it. After learning some basics we do a simple walkthrough of how to run mongo through the docker-compose file in this directory.
 
 ## Docker ## 
 ### What is docker anyway? ### 
@@ -20,7 +20,7 @@ A base image is just like a superclass. It has no parent, and the entire image i
 #### 2. Containers #### 
 Containers are simply instances of images. When we run our containers we create a live instance of the application refrenced in our image. From here we can run commands within the container and perform all the normal operations we could do with the application just as if it was directly installed on our machine. 
 
-Containers unlike images can have be in various states. Some of these states include running, paused, or exited.  
+Containers unlike images can have be in various states. Some of these states include running,up,paused, or exited.
 
 #### 3. Dockerfile #### 
 A dockerfile is the text document which contains all the commands used to build docker images. It is important to note that a dockerfile isn't a file extension. For example if we created an image, we would save the instructions to build that image as simply `Dockerfile`. The reason why we do this is when we go to build our image, docker can easily identify the file that conatins all the instructions to build our image. 
@@ -56,8 +56,44 @@ Link: https://hub.docker.com/editions/community/docker-ce-desktop-mac
 #### Installing Docker & Docker-compose on Ubuntu #### 
 Link: https://www.bmc.com/blogs/mongodb-docker-container/ 
 
-Note: Follow the 2 sections installing docker and intsalling Docker Compose
+Note: Follow the 2 sections installing docker and intsalling Docker Compose 
 
+## Running Mongodb with Docker ## 
+To run the mongodb with the docker-compose file we have in this directory simply type in the following command: 
+
+`docker-compose up -d`   
+
+If at any point you get a permission denied error simply place `sudo` in front of the command you are trying to run.
+
+After that lets check that our container is up and running using the command `docker ps -a` 
+
+When you run this command you should see the status of the mongodb container as up
+
+From here we are going inside our container to use our mongodb instance that we have running. To do this use the following command 
+`docker exec -it mongodb bash` 
+
+This will create open up a bash script within our container. From here we will run mongo by typing `mongo` or `mongosh` 
+
+Now the fun stuff... lets start doing some basic mongo commands. To see what databases currently exist we can simply use a very sql-like command `show databases` which should output a few databases like admin. 
+
+We can create a database by simply running `use <your-database>`. This command will look to see if a database already exists, if it does we automatically go into that database, if not we create the database and then place ourseleves within the databse. For this simple walkthrough lets make a database for our application, `use rate_my_coop`. 
+
+Once we have our database created lets now create a collection. A collection is similar to a table in relational databases. Instead of a table which contains rows and columns, we create a collection which will store JSON objects.  
+
+Lets make the collection users: `db.createCollection("users")` 
+
+Now we are going to insert a few JSON objects which represent individual users. We do this by typing 
+`db.users.insertMany([{name:"Susan",major:"CSC"},{name:"John",major:"ECON"},{name:"Emily",major:"LAW"}])` 
+
+You will notice something intresting when we insert our data, there appears to be a unquie id being applied to each JSON object. Mongo automatically creates a unquie identifier for each object which is not something offered in most relational databases.  
+
+Now if we want to find all of the data that we just inserted we simply run `db.users.find().pretty()` which print all of our "users" in a nice format. 
+
+From here you can play around with other mongo commands/queries. A handy site which provides a decent tutorial is provided in the link below: 
+
+Link: https://www.tutorialspoint.com/mongodb/index.htm 
+
+To stop running mongo simply exit the mongo database and the bash script. After that simply run `docker-compose down -v` and we have succesfully stopped running our mongo container.
 
 
 
