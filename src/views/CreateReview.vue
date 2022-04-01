@@ -1,7 +1,6 @@
 <template>
   <div class="CreateReview">
-    <h1>This page allows us to create reviews</h1>
-
+    <h1>Create a Review</h1>
     <CreateFields/>
   </div>
 </template>
