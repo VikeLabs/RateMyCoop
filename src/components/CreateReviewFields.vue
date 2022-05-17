@@ -17,8 +17,8 @@
           </div>
           <div class="col-lg-2"> 
             <div class="form-group">
-              <label for="duration">Duration</label>
-              <input type="text" class="form-control" id="duration" placeholder="Enter Co-op Duration (in months)">
+              <label for="duration">Duration (Months)</label>
+              <input type="text" class="form-control" id="duration" placeholder="Enter Duration">
             </div>
           </div>
         </div>
@@ -40,20 +40,19 @@
           <div class="col-lg-4"> 
             <div class="form-group">
               <label for="enjoyment">Enjoyment</label>
-              <input type="text" class="form-control" id="enjoyment" placeholder="Rate Enjoyment">
-              <RateStars/>
+              <RateStars name="enjoyment"/>
             </div>
           </div>
           <div class="col-lg-4"> 
             <div class="form-group">
               <label for="personalGrowth">Personal Growth</label>
-              <input type="text" class="form-control" id="personalGrowth" placeholder="Rate Growth">
+              <RateStars name="personal-growth"/>
             </div>
           </div>
           <div class="col-lg-4"> 
             <div class="form-group">
               <label for="support">Support</label>
-              <input type="text" class="form-control" id="support" placeholder="Rate support">
+              <RateStars name="support"/>
             </div>
           </div>
         </div>
