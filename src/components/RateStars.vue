@@ -1,19 +1,19 @@
 <template>
     <div>
         <div class="btn-group">
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" :id="'star1_' + name" class="btn btn-outline-secondary">
                 <span class='bi bi-star'></span>
             </button>
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" :id="'star2_' + name" class="btn btn-outline-secondary">
                 <span class='bi bi-star'></span>
             </button>
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" :id="'star3_' + name" class="btn btn-outline-secondary">
                 <span class='bi bi-star'></span>
             </button>
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" :id="'star4_' + name" class="btn btn-outline-secondary">
                 <span class='bi bi-star'></span>
             </button>
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" :id="'star5_' + name" class="btn btn-outline-secondary">
                 <span class='bi bi-star'></span>
             </button>
         </div>
