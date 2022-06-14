@@ -3,22 +3,16 @@
     <div class="container">
       <form>
         <div class="row"> 
-          <div class="col-lg-5"> 
+          <div class="col-lg-6"> 
             <div class="form-group">
               <label for="company">Company</label>
               <input type="text" class="form-control" id="company" placeholder="Enter Company Name">
             </div>
           </div>
-          <div class="col-lg-5"> 
+          <div class="col-lg-6"> 
             <div class="form-group">
               <label for="position">Position</label>
               <input type="text" class="form-control" id="position" placeholder="Enter your Position Title">
-            </div>
-          </div>
-          <div class="col-lg-2"> 
-            <div class="form-group">
-              <label for="duration">Duration (Months)</label>
-              <input type="text" class="form-control" id="duration" placeholder="Enter Duration">
             </div>
           </div>
         </div>
@@ -33,6 +27,33 @@
             <div class="form-group">
               <label for="industry">Industry</label>
               <input type="text" class="form-control" id="industry" placeholder="Enter your Industry">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6"> 
+            <div class="form-group">
+              <label for="duration">Duration (Months)</label>
+              <select id="duration" class="form-control">
+                <option selected>Choose...</option>
+                <option>4</option>
+                <option>8</option>
+                <option>12</option>
+                <option>16</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-6"> 
+            <div class="form-group">
+              <label for="year">Academic Year</label>
+              <select id="year" class="form-control">
+                <option selected>Choose...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5+</option>
+              </select>
             </div>
           </div>
         </div>
