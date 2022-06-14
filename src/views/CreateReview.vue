@@ -11,7 +11,7 @@
 import CreateFields from '@/components/CreateReviewFields.vue'
 
 export default {
-  name: 'CreateReviewFields',
+  name: 'CreateReview',
   components: {
     CreateFields
   }
