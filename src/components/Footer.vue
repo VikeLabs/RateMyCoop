@@ -14,7 +14,7 @@
         >Github</router-link
       >
       <span class="spacer"></span>
-      <router-link class="footer-link" :to="{ name: '', params: {} }"
+      <router-link class="footer-link" to="/help"
         >Help</router-link
       >
     </p>
