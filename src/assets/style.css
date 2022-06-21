@@ -1,0 +1,98 @@
+/* main.css */
+/* Global Styles */
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    /*color: #2c3e50;*/
+    color: #f9dc5c;
+    background-color: #2f2f2f;
+}
+
+#nav {
+    padding: 30px;
+}
+
+#nav a {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+    color: #42b983;
+}
+
+router-link {
+    color: white !important;
+}
+
+/* Footer Styles */
+.main-footer {
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.spacer {
+    color: #40484f;
+    margin: 1.5em;
+}
+
+a.footer-link {
+    color: #40484f;
+    text-decoration: none;
+    font-family: "Noto Sans";
+    font-weight: 100;
+}
+
+a.footer-link:hover {
+    color: white;
+}
+
+/* Header Styles */
+a.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+ul.navbar-nav {
+    align: right;
+}
+
+p.nav-text {
+    margin-right: 0.5em;
+    font-size: 1.5em;
+}
+
+li.nav-item {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+img.nav-btn {
+    width: 4em;
+    display: inline-block;
+}
+
+.darken:hover {
+    opacity: 60%;
+}
+
+.darken:active {
+    opacity: 55%;
+}
+
+@media (min-width: 992px) {
+    .display-on-small {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .display-on-small {
+        display: inline-block;
+    }
+}
