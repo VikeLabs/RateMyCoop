@@ -106,6 +106,6 @@ export default {
 
 <style scoped>
 .form-select {
-  color: #676f7a
+  appearance: inherit;
 }
 </style>
