@@ -23,6 +23,11 @@
     color: #42b983;
 }
 
+.row {
+    text-align: left;
+    padding: 5px
+}
+
 router-link {
     color: white !important;
 }
