@@ -8,7 +8,7 @@
       <span class="spacer"></span>
       <router-link class="footer-link" :to="{ name: '', params: {} }">Github</router-link>
       <span class="spacer"></span>
-      <router-link class="footer-link" :to="{ name: '', params: {} }">Help</router-link>
+      <router-link class="footer-link" to="/help">Help</router-link>
     </p>
   </footer>
 </template>

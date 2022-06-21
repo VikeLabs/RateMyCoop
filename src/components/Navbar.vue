@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <router-link class="navbar-brand" :to="{ name: '', params: {} }">RateMyCoop</router-link>
+      <router-link class="navbar-brand" to="/">RateMyCoop</router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -16,8 +16,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item ms-auto" id="search-item">
             <span>
-              <router-link
-                class="nav-link darken" :to="{ name: '', params: {} }"
+              <router-link class="nav-link darken" :to="{ name: '', params: {} }"
                 title="Search">
                 <p class="display-on-small nav-text" id="tooltip">Search</p>
                 <img
@@ -29,8 +28,7 @@
           </li>
           <li class="nav-item ms-auto" id="add-review-item">
             <span>
-              <router-link
-                class="nav-link darken" :to="{ name: '', params: {} }" title="Add Review">
+              <router-link class="nav-link darken" to="/CreateReview" title="Add Review">
                 <p class="display-on-small nav-text">Add Review</p>
                 <img
                   class="nav-btn"
@@ -41,8 +39,7 @@
           </li>
           <li class="nav-item ms-auto" id="profile-item">
             <span>
-              <router-link
-                class="nav-link darken" :to="{ name: '', params: {} }" title="Profile">
+              <router-link class="nav-link darken" :to="{ name: '', params: {} }" title="Profile">
                 <p class="display-on-small nav-text">Profile</p>
                 <img
                   class="nav-btn"
