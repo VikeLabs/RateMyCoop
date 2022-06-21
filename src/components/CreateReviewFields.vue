@@ -34,8 +34,8 @@
           <div class="col-lg-6"> 
             <div class="form-group">
               <label for="duration">Duration (Months)</label>
-              <select id="duration" class="form-control">
-                <option selected>Choose...</option>
+              <select id="duration" class="form-control form-select">
+                <option value="" disabled selected>Select a Duration</option>
                 <option>4</option>
                 <option>8</option>
                 <option>12</option>
@@ -46,8 +46,8 @@
           <div class="col-lg-6"> 
             <div class="form-group">
               <label for="year">Academic Year</label>
-              <select id="year" class="form-control">
-                <option selected>Choose...</option>
+              <select id="year" class="form-control form-select">
+                <option value="" disabled selected>Select a Year</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -103,3 +103,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.form-select {
+  color: #676f7a
+}
+</style>
