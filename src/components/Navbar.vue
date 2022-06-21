@@ -1,9 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <router-link class="navbar-brand" to="/"
-        >RateMyCoop</router-link
-      >
+      <router-link class="navbar-brand" to="/">RateMyCoop</router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -34,11 +32,8 @@
           </li>
           <li class="nav-item ms-auto" id="add-review-item">
             <span>
-              <router-link
-                class="nav-link darken"
-                :to="{ name: '', params: {} }"
-                title="Add Review"
-                ><p class="display-on-small nav-text">Add Review</p>
+              <router-link class="nav-link darken" to="/CreateReview" title="Add Review">
+                <p class="display-on-small nav-text">Add Review</p>
                 <img
                   class="nav-btn"
                   src="@/assets/nav_assets/add_review.svg"
