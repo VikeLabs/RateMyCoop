@@ -20,24 +20,3 @@
     </p>
   </footer>
 </template>
-
-<style scoped>
-.main-footer {
-  padding: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.spacer {
-  color: #40484f;
-  margin: 1.5em;
-}
-a.footer-link {
-  color: #40484f;
-  text-decoration: none;
-  font-family: "Noto Sans";
-  font-weight: 100;
-}
-a.footer-link:hover {
-  color: white;
-}
-</style>

@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <router-link class="navbar-brand" :to="{ name: '', params: {} }"
+      <router-link class="navbar-brand" to="/"
         >RateMyCoop</router-link
       >
       <button
@@ -67,44 +67,3 @@
     </div>
   </nav>
 </template>
-
-<!-- router-link is an <a> tag in disguise-->
-<style scoped>
-a.navbar-brand {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 2em;
-}
-ul.navbar-nav {
-  align: right;
-}
-p.nav-text {
-  margin-right: 0.5em;
-  font-size: 1.5em;
-}
-li.nav-item {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
-img.nav-btn {
-  width: 4em;
-  display: inline-block;
-}
-.darken:hover {
-  opacity: 60%;
-}
-.darken:active {
-  opacity: 55%;
-}
-@media (min-width: 992px) {
-  .display-on-small {
-    display: none;
-  }
-}
-@media (max-width: 991px) {
-  .display-on-small {
-    display: inline-block;
-  }
-}
-</style>
