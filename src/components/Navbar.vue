@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <router-link class="navbar-brand" :to="{ name: '', params: {} }"
+      <router-link class="navbar-brand" :to="{ name: 'home' }"
         >RateMyCoop</router-link
       >
       <button
@@ -21,7 +21,7 @@
             <span>
               <router-link
                 class="nav-link darken"
-                :to="{ name: '', params: {} }"
+                :to="{ name: 'home' }"
                 title="Search"
                 ><p class="display-on-small nav-text" id="tooltip">Search</p>
                 <img
@@ -51,7 +51,7 @@
             <span>
               <router-link
                 class="nav-link darken"
-                :to="{ name: '', params: {} }"
+                :to="{ name: 'profile', params: {} }"
                 title="Profile"
                 ><p class="display-on-small nav-text">Profile</p>
                 <img
