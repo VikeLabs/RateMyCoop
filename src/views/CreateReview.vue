@@ -1,7 +1,7 @@
 <template>
   <div class="CreateReview">
     <br />
-    <h1>Create a Review</h1>
+    <h1><b>Create a Review</b></h1>
     <CreateFields/>
   </div>
 </template>
