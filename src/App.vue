@@ -44,4 +44,9 @@ export default {
 router-link {
   color: white;
 }
+
+.row {
+  text-align: left;
+  padding: 5px
+}
 </style>

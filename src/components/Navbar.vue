@@ -34,11 +34,8 @@
           </li>
           <li class="nav-item ms-auto" id="add-review-item">
             <span>
-              <router-link
-                class="nav-link darken"
-                :to="{ name: '', params: {} }"
-                title="Add Review"
-                ><p class="display-on-small nav-text">Add Review</p>
+              <router-link class="nav-link darken" :to="{ name: 'create_review' }" title="Add Review">
+                <p class="display-on-small nav-text">Add Review</p>
                 <img
                   class="nav-btn"
                   src="@/assets/nav_assets/add_review.svg"
