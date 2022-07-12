@@ -1,9 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <router-link class="navbar-brand" :to="{ name: 'home' }"
-        >RateMyCoop</router-link
-      >
+      <router-link class="navbar-brand" :to="{ name: 'home' }">RateMyCoop</router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -11,8 +9,7 @@
         data-bs-target="#nav-links"
         aria-controls="nav-links"
         aria-expanded="false"
-        aria-label="Toggle the Navbar in mobile"
-      >
+        aria-label="Toggle the Navbar in mobile">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav-links">
@@ -22,13 +19,12 @@
               <router-link
                 class="nav-link darken"
                 :to="{ name: 'home' }"
-                title="Search"
-                ><p class="display-on-small nav-text" id="tooltip">Search</p>
+                title="Search">
+                <p class="display-on-small nav-text" id="tooltip">Search</p>
                 <img
                   class="nav-btn"
                   src="@/assets/nav_assets/search.svg"
-                  alt="Search"
-                />
+                  alt="Search"/>
               </router-link>
             </span>
           </li>
@@ -39,8 +35,7 @@
                 <img
                   class="nav-btn"
                   src="@/assets/nav_assets/add_review.svg"
-                  alt="Add Review"
-                />
+                  alt="Add Review"/>
               </router-link>
             </span>
           </li>
@@ -49,13 +44,12 @@
               <router-link
                 class="nav-link darken"
                 :to="{ name: 'profile', params: {} }"
-                title="Profile"
-                ><p class="display-on-small nav-text">Profile</p>
+                title="Profile">
+                <p class="display-on-small nav-text">Profile</p>
                 <img
                   class="nav-btn"
                   src="@/assets/nav_assets/profile.svg"
-                  alt="Profile"
-                />
+                  alt="Profile"/>
               </router-link>
             </span>
           </li>

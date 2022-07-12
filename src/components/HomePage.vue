@@ -27,7 +27,7 @@
             <i class="h1 bi bi-patch-question"></i>
           </div>
           <div class="h4 w-100">
-          Read or create view for companies!
+            Read or create view for companies!
           </div>
         </div>
       </div>
